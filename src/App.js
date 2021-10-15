@@ -8,6 +8,7 @@ import {
 import Login from './containers/login';
 import Signup from './containers/signup';
 import Store from './containers/store';
+import Logout from "./containers/logout";
 
 export default function App() {
   return (
@@ -16,6 +17,9 @@ export default function App() {
         <Switch>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/logout">
+            <Logout />
           </Route>
           <Route path="/signup">
             <Signup />
